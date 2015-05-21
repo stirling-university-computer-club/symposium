@@ -1,0 +1,168 @@
+/*
+Theme Name: Symposium
+Author: Stirling University Computer Club
+Author URI: http://stircomp.co.uk
+Description: Custom theme for the University of Stirling Symposium website.
+Version: 1.0
+Text Domain: symposium
+*/
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+div.container-fluid.container-restricted div.row div.content {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 10px;
+}
+
+div.container-fluid.container-restricted div.row {
+    position: relative;
+}
+
+div.container-fluid.container-restricted div.row div.backgroundimage {
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-size: cover;
+    transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out;
+}
+
+div.container-fluid.container-restricted div.header {
+    height: 100px;
+}
+
+div.container-fluid.container-restricted div.header img.logo {
+    height: 80px;
+}
+
+h1.pagetitle {
+    color: #fff;
+    font-family: serif;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+div.container-fluid.container-restricted div.footer {
+    height: 60px;
+    background-color: #1c941c;
+}
+
+div.container-fluid.container-restricted div.footer p.message {
+    color: #87cb87;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+div.container-fluid.container-restricted div.footer p.message a {
+    transition: color .25s ease-in-out;
+    -moz-transition: color .25s ease-in-out;
+    -webkit-transition: color .25s ease-in-out;
+    color: #87cb87;
+}
+
+div.container-fluid.container-restricted div.footer p.message a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul.desktopmenu {
+    padding-top: 28px;
+    float: right;
+    list-style-type: none;
+}
+
+ul.desktopmenu li {
+    display: inline;
+    margin-right: 26px;
+}
+
+ul.desktopmenu li a {
+    font-size: 19px;
+    color: #111;
+    transition: color .25s ease-in-out;
+    -moz-transition: color .25s ease-in-out;
+    -webkit-transition: color .25s ease-in-out;
+}
+
+ul.desktopmenu li a:hover {
+    text-decoration: none;
+    color: #87cb87;
+}
+
+ul.desktopmenu li.current_page_item {
+    padding-bottom: 9px;
+    border-bottom: 4px #87cb87 solid;
+}
+
+span.mobilemenubutton {
+    margin-top: 25px;
+    font-size: 30px;
+    float: right;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul.mobilemenu {
+    position: fixed;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 1000;
+    list-style-type: none;
+    padding: 10px;
+    display: none;
+    margin: 0;
+}
+
+ul.mobilemenu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.mobilemenu li {
+    font-size: 22px;
+    border-bottom: 1px #87cb87 solid;
+    padding: 10px 0;
+}
+
+ul.mobilemenu li a {
+    width: 100%;
+    color: black;
+    text-decoration: none;
+}
+
+div.container-fluid.container-restricted div.header.fixed-menu {
+    position: fixed;
+    height: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #fff;
+    padding: 0px 15px;
+}
+
+.mobile-menu-padded {
+    padding-top: 100px;
+}
